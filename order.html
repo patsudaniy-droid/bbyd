@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <span class="eyebrow">Order</span>
+        <h1 style="font-size:clamp(2rem,5vw,3rem);">สั่งซื้อสินค้า</h1>
+        <hr class="divider" style="margin-left:auto;margin-right:auto;">
+        <p>กรอกข้อมูลด้านล่างเพื่อยืนยันคำสั่งซื้อ</p>
+      </div>
+    </section>
+
+    <section class="section section--white" style="padding-top:var(--space-lg);">
+      <div class="container">
+        <form id="orderForm" class="form-card">
+          <label for="customerName" style="margin-top:0;">ชื่อลูกค้า</label>
+          <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+
+          <label for="contact">เบอร์โทร / Line</label>
+          <input type="text" id="contact" name="contact" autocomplete="tel" required>
+
+          <label for="items">รายการสินค้า</label>
+          <input type="text" id="items" name="items" required>
+
+          <label for="total">จำนวนเงินรวม (บาท)</label>
+          <input type="text" id="total" name="total" inputmode="numeric" required>
+
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note" rows="3"></textarea>
+
+          <button type="submit" class="btn btn--solid btn--block">ยืนยันสั่งซื้อ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <div class="site-footer__links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </div>
+      <p>&copy; 2026 Body Scent. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
